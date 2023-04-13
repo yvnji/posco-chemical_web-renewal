@@ -1,6 +1,9 @@
 # posco-chemical_web-renewal
 Website renewal project of POSCO Chemical by using JavaScript, HTML, CSS.
-![Preview]("./assets/Preveiw.png")
+<p align="center">
+  <img src="![Preview](https://user-images.githubusercontent.com/126065194/231801379-7b8ee5dd-0225-4412-82d8-100f6a11a705.png)
+">
+</p>
 
 <br />
 
