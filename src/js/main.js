@@ -19,7 +19,13 @@ window.addEventListener('scroll', function() {
 });
 
 //헤더 애니메이션
+<<<<<<< HEAD
 $("#header").addClass("active");
+=======
+window.onload = function() {
+  document.querySelector('#header').classList.add('active');
+}
+>>>>>>> yvnji
 
 //헤더-gnb영역
 $(".gnb .depth1")
