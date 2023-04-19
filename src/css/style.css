@@ -122,25 +122,21 @@ button {
   background-color: #fff;
 }
 
-.gnb .citizen a {
-  padding-right: 19px;
-  background-image: url(../img/go_website_icon01_09.png);
-  background-repeat: no-repeat;
-  background-position: right 18px top 38px;
-}
-
 .gnb .depth2 {
   position: absolute;
   top: 86px;
   left: 0;
   width: 100%;
-  height: 292px;
+  height: 0;
+  padding: 20px 0;
   z-index: 100;
   display: none;
+  transition: 5s;
 }
 
-.gnb .depth2{
-  padding: 20px 0;
+.gnb .depth2.active {
+  display: block;
+  height: 292px;
 }
 
 .gnb .depth2 li a {
@@ -164,6 +160,10 @@ button {
   height: 292px;
   background-color: #f1faff;
   display: none;
+}
+
+.gnbBg.active{
+  display: block;
 }
 
 /* 헤더 lang_search */
