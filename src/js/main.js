@@ -1,79 +1,10 @@
-/* 
-
-작성자 : 김윤지
-포스코케미칼_스크립트문서
-update : 22.07.12
-
-*/
-
 // scroll event
 window.addEventListener('scroll', function() {
   const sct = window.pageYOffset || document.documentElement.scrollTop;
-  const header = document.querySelector('#header');
   const irBox = document.querySelector('.ir_box');
 
-  // header move
-  header.classList.toggle('changeHeader', window.scrollY >= 20);
   // IR
   irBox.classList.toggle('on', sct >= document.querySelector('.ir').getBoundingClientRect().top + window.pageYOffset - 200);
-});
-
-// header animation
-window.onload = function() {
-  document.querySelector('#header').classList.add('active');
-}
-
-// gnb dropdown
-const gnbDepth1 = document.querySelector('.gnb .depth1');
-const gnbDepth2 = document.querySelector('.gnb .depth2');
-const gnbBg = document.querySelector('.gnbBg');
-gnbDepth1.addEventListener('mouseenter', {
-
-})
-$(".gnb .depth1")
-  .mouseenter(function () {
-    $(".depth2").stop().slideDown();
-    $(".gnbBg").stop().slideDown();
-  })
-  .mouseleave(function () {
-    $(".depth2").stop().slideUp();
-    $(".gnbBg").stop().slideUp();
-  });
-
-// gnb language 
-$(".lang .current").click(function () {
-  let d = $(".lang_list").css("display");
-  if (d == "block") {
-    $(".lang_list").stop().slideUp();
-    $(this).removeClass("up");
-  } else {
-    $(".lang_list").stop().slideDown();
-    $(this).addClass("up");
-  }
-  return false;
-});
-$(".lang_list li").click(function () {
-  $(".lang_list li").removeClass("on");
-  $(this).addClass("on");
-  let langOn = $(this).text();
-  $(".lang .current").text(langOn);
-  return false;
-});
-
-// gnb search
-$(".search").click(function () {
-  let d = $(this).find("input").css("display");
-  if (d == "block") {
-    $(this).find("input").stop().fadeOut(300);
-    $(this).find("button").stop().fadeOut(300);
-    $(this).removeClass("close");
-  } else {
-    $(this).find("input").stop().fadeIn(300);
-    $(this).find("button").stop().fadeIn(300);
-    $(this).addClass("close");
-    $(".lang .current").removeClass("up");
-    $(".lang_list").stop().slideUp();
-  }
 });
 
 //posco_main slide
