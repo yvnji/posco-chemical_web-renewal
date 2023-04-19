@@ -6,24 +6,30 @@ update : 22.07.12
 
 */
 
-//스크롤 이벤트 
+// scroll event
 window.addEventListener('scroll', function() {
   const sct = window.pageYOffset || document.documentElement.scrollTop;
   const header = document.querySelector('#header');
   const irBox = document.querySelector('.ir_box');
 
-  // 스크롤 시 헤더 위치, 너비 변경
+  // header move
   header.classList.toggle('changeHeader', window.scrollY >= 20);
-  // IR 영역
+  // IR
   irBox.classList.toggle('on', sct >= document.querySelector('.ir').getBoundingClientRect().top + window.pageYOffset - 200);
 });
 
-//헤더 애니메이션
+// header animation
 window.onload = function() {
   document.querySelector('#header').classList.add('active');
 }
 
-//헤더-gnb영역
+// gnb dropdown
+const gnbDepth1 = document.querySelector('.gnb .depth1');
+const gnbDepth2 = document.querySelector('.gnb .depth2');
+const gnbBg = document.querySelector('.gnbBg');
+gnbDepth1.addEventListener('mouseenter', {
+
+})
 $(".gnb .depth1")
   .mouseenter(function () {
     $(".depth2").stop().slideDown();
@@ -34,7 +40,7 @@ $(".gnb .depth1")
     $(".gnbBg").stop().slideUp();
   });
 
-//헤더-언어선택영역
+// gnb language 
 $(".lang .current").click(function () {
   let d = $(".lang_list").css("display");
   if (d == "block") {
@@ -54,7 +60,7 @@ $(".lang_list li").click(function () {
   return false;
 });
 
-//헤더-검색창
+// gnb search
 $(".search").click(function () {
   let d = $(this).find("input").css("display");
   if (d == "block") {
@@ -70,7 +76,7 @@ $(".search").click(function () {
   }
 });
 
-//posco_main-메인슬라이드
+//posco_main slide
 let mainS = new Swiper(".posco_main", {
   pagination: {
     el: ".mS_pager",
@@ -95,7 +101,7 @@ $(".mS_play").click(function () {
   $(".mS_stop").show();
 });
 
-//biz-슬라이드
+// biz slide
 let bizS = new Swiper(".biz_list", {
   pagination: {
     el: ".biz_pager",
