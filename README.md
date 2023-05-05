@@ -26,4 +26,5 @@ Website renewal project of POSCO Chemical by using JavaScript, HTML, CSS.
 <br />
 
 ## 리팩토링
-프로젝트를 진행할 당시에는 jQuery로 대부분의 코드를 작성하였으나, 현재 해당 프로젝트를 Vanilla JavaScript로 리팩토링하고자 계획을 세웠습니다. 또한 HTML의 구조, 시멘틱 마크업, 웹 표준 및 웹 접근성에 대한 재검토를 행하며, CSS를 SCSS로 변환하는 작업을 진행할 예정입니다. 
+- jQuery -> JavaScript
+- HTML의 구조, 시멘틱 마크업, 웹 표준 및 웹 접근성에 대한 재검토
