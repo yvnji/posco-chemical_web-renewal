@@ -1,10 +1,11 @@
 # posco-chemical_web-renewal
 Website renewal project of POSCO Chemical by using JavaScript, HTML, CSS.
+
 ![Preview](https://user-images.githubusercontent.com/126065194/231803042-62cc840c-576a-4ca0-ac31-54116fea8727.png)
 
 <br />
 
-> 본 프로젝트는 2022년도에 [UX/UI 웹 퍼블리셔 과정]을 수강하며, **퍼블리싱**에 초점을 맞추어 진행한 프로젝트입니다. 
+> 본 프로젝트는 2022년도, **퍼블리싱**에 초점을 맞추어 진행한 프로젝트입니다. 
 
 ## 프로젝트 진행 일자
 - **v0.1** : 2022.04.11 ~ 2022.04.15
@@ -25,4 +26,5 @@ Website renewal project of POSCO Chemical by using JavaScript, HTML, CSS.
 <br />
 
 ## 리팩토링
-프로젝트를 진행할 당시에는 jQuery로 대부분의 코드를 작성하였으나, 현재 해당 프로젝트를 Vanilla JavaScript로 리팩토링하고자 계획을 세웠습니다. 또한 HTML의 구조, 시멘틱 마크업, 웹 표준 및 웹 접근성에 대한 재검토를 행하며, CSS를 SCSS로 변환하는 작업을 진행할 예정입니다. 
+- jQuery -> JavaScript
+- HTML의 구조, 시멘틱 마크업, 웹 표준 및 웹 접근성에 대한 재검토
