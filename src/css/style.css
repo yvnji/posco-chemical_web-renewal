@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "S-CoreDream-9Black";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff") format("woff");
+  font-family: 'S-CoreDream-9Black';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 body {
   position: relative;
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #202020;
@@ -162,7 +162,7 @@ button {
   display: none;
 }
 
-.gnbBg.active{
+.gnbBg.active {
   display: block;
 }
 
@@ -188,7 +188,7 @@ button {
 }
 
 .lang .current::after {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: top;
   width: 9px;
@@ -297,7 +297,7 @@ button {
   background-image: url(../img/main_pic3_1.png);
 }
 
-.m_pic_txt{
+.m_pic_txt {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -309,7 +309,7 @@ button {
   color: #fff;
 }
 
-.m_pic_txt span{
+.m_pic_txt span {
   display: block;
   text-align: center;
   font-size: 78px;
@@ -317,17 +317,17 @@ button {
   line-height: 1em;
   color: #fff;
   margin-top: 26px;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
 }
 
-.mainS_btns {
+.main-slide_btns {
   position: absolute;
   top: 490px;
   right: 85px;
   z-index: 1;
 }
 
-.mS_pager span {
+.main-slide_pager span {
   display: block;
   width: 10px;
   height: 10px;
@@ -337,21 +337,21 @@ button {
   cursor: pointer;
 }
 
-.mS_pager .swiper-pagination-bullet-active {
+.main-slide_pager .swiper-pagination-bullet-active {
   height: 31px;
   border-radius: 16px;
   background-color: #00578a;
   transition: 0.6s;
 }
 
-.mS_stop {
+.main-slide_stop {
   width: 10px;
   height: 6px;
   background-image: url(../img/m_stopper_03.png);
   cursor: pointer;
 }
 
-.mS_play {
+.main-slide_play {
   width: 0;
   height: 0;
   border-left: 10px solid #fff;
@@ -361,8 +361,8 @@ button {
   display: none;
 }
 
-.mS_play::before {
-  content: "";
+.main-slide_play::before {
+  content: '';
   display: inline-block;
   vertical-align: top;
   width: 2px;
@@ -442,7 +442,7 @@ button {
   line-height: 1em;
   font-weight: 300;
   color: #494949;
-  font-family: "SCoreDream";
+  font-family: 'SCoreDream';
   font-weight: 200;
   font-style: normal;
 }
@@ -480,7 +480,7 @@ button {
 }
 
 .more_btn a::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 100%;
   display: block;
@@ -606,7 +606,7 @@ button {
 
 .esg_list li:before,
 .esg_list li:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -636,7 +636,7 @@ button {
 
 .esg_list li.on::before,
 .esg_list li.on::after {
-  content: "";
+  content: '';
   height: 2px;
   width: 100%;
   background: #00578a;
@@ -651,7 +651,7 @@ button {
   position: absolute;
   top: 156px;
   left: 172px;
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: top;
   width: 1px;
@@ -681,7 +681,7 @@ button {
   font-weight: 300;
   line-height: 72px;
   color: #494949;
-  font-family: "SCoreDream";
+  font-family: 'SCoreDream';
   font-style: normal;
 }
 
@@ -778,17 +778,17 @@ button {
   display: flex;
 }
 
-.ir_box>div {
+.ir_box > div {
   transform: translateY(150px);
   opacity: 0;
   transition: 1.3s;
 }
 
-.ir_box>div:last-child {
+.ir_box > div:last-child {
   transition-delay: 0.1s;
 }
 
-.ir_box.on>div {
+.ir_box.on > div {
   transform: translateY(0);
   opacity: 1;
 }
@@ -817,7 +817,7 @@ button {
   font-weight: 400;
   line-height: 1em;
   color: #fff;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
 }
 
 .ir_box1_top .ir_b1_f3 {
@@ -829,7 +829,7 @@ button {
   font-weight: 500;
   line-height: 1em;
   color: #fff;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
   padding-left: 18px;
   margin-right: 38px;
   background-image: url(../img/red_rise_btn_10.png);
@@ -839,7 +839,7 @@ button {
 
 .ir_box1_bottom:before {
   margin-bottom: 20px;
-  content: "";
+  content: '';
   margin-top: 148px;
   display: block;
   width: 312px;
@@ -864,7 +864,7 @@ button {
 
 .ir_box1_bottom li .price {
   font-weight: 200;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
 }
 
 .ir_box2 {
@@ -911,7 +911,7 @@ button {
   position: absolute;
   left: 36px;
   top: -1px;
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: top;
   width: 17px;
@@ -1059,7 +1059,7 @@ button {
   position: absolute;
   top: 33px;
   left: 12px;
-  content: "";
+  content: '';
   display: block;
   width: 5px;
   height: 5px;
@@ -1102,7 +1102,7 @@ button {
 
 .news_box .swiper-slide .date_big {
   margin-top: 50px;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
   font-size: 63px;
   line-height: 62px;
   color: #b6b5b5;
@@ -1110,7 +1110,7 @@ button {
 
 .news_box .swiper-slide .date_small {
   margin-top: 9px;
-  font-family: "NanumSquareRound", sans-serif;
+  font-family: 'NanumSquareRound', sans-serif;
   font-size: 14px;
   line-height: 1em;
   color: #b6b5b5;
@@ -1242,7 +1242,7 @@ button {
 }
 
 .footer_f1::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 50%;
@@ -1311,7 +1311,7 @@ button {
 }
 
 .fs_btn.close::after {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: top;
   width: 11px;
